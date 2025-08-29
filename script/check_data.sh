@@ -59,11 +59,11 @@ check_directory_data() {
             if [ "$non_empty_files" -gt 0 ]; then
                 echo -e "${GREEN}✓ Contains $non_empty_files non-empty files${NC}"
             else
-                echo -e "${YELLOW}⚠ All files are empty${NC}"
+                echo -e "${YELLOW} All files are empty${NC}"
             fi
 
         else
-            echo -e "${YELLOW}⚠ No files in directory${NC}"
+            echo -e "${YELLOW} No files in directory${NC}"
         fi
 
     else
@@ -116,7 +116,7 @@ check_data_updates() {
             if [ "$recent_files" -gt 0 ]; then
                 echo -e "${GREEN}✓ $dir: $recent_files files updated in last 5 minutes${NC}"
             else
-                echo -e "${YELLOW}⚠ $dir: No files updated in last 5 minutes${NC}"
+                echo -e "${YELLOW} $dir: No files updated in last 5 minutes${NC}"
             fi
         fi
     done
